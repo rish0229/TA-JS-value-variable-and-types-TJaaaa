@@ -71,10 +71,10 @@ Example:
 "hello", -21; // false
 */
 
-var num1 = prompt('Enter first value?');
-var num2 = prompt('Enter second value?');
-if (num1 === num2) {
-  alert('true');
+var num1 = +prompt('Enter first value?');
+var num2 = +prompt('Enter second value?');
+if (isNaN(num1) || isNaN(num2)) {
+  alert('Enter a valid value');
 } else {
-  alert('false');
+  alert(num1 === num2);
 }
