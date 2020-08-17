@@ -37,6 +37,19 @@ n = 7 => output: heeeeeeello
 👇
 */
 
+let count = Number(prompt('Enter the number of e!'));
+
+const start = 'h';
+const end = 'llo';
+
+let middle = '';
+
+for (var i = 0; i < count; i++) {
+  middle += 'e';
+}
+
+alert(start + middle + end);
+
 /*
 Program to calculate the sum of first n natural numbers(1,2,3...n are known as natural numbers). Prompt user to enter n (using `prompt`) then based on input provided calculate and show result in `alert`.
 👇
